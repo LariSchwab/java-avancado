@@ -30,7 +30,7 @@ async function salvar(e) {
         nome: nome,
         cnpj: cnpj
     }
-    let url = `${urlAPI}/api/empresa`;
+    let url = `${urlAPI}/api/v1/empresa`;
     const resposta = await fetch(url, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
