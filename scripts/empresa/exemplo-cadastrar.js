@@ -14,6 +14,7 @@ async function salvar(e) {
     e.preventDefault(); // form não deve ser enviado, interrompe o envio do formulário 
     let campoNome = document.getElementById("campoNome");
     let nome = campoNome.value
+    
     if (nome.length < 3) {
         alert("Nome deve conter no mínimo 3 caracteres");
         return; // Faz com que o código abaixo não seja executado, ou seja, encerrando a execução dessa função
